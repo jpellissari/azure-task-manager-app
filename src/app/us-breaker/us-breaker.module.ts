@@ -6,14 +6,15 @@ import { RouterModule, Routes } from '@angular/router'
 import { TaskCountComponent } from './components/task-count/task-count.component'
 import { WiSearchComponent } from './components/wi-search/wi-search.component'
 import { UsDashboardComponent } from './containers/us-dashboard/us-dashboard.component'
-import { WorkItemService } from './services/work-item.service'
+import { WorkItemService } from './services/work-item.service';
+import { WelcomeComponent } from './welcome/welcome.component'
 
 const routes: Routes = [
   { path: '', component: UsDashboardComponent, pathMatch: 'full' },
 ]
 
 @NgModule({
-  declarations: [UsDashboardComponent, WiSearchComponent, TaskCountComponent],
+  declarations: [UsDashboardComponent, WiSearchComponent, TaskCountComponent, WelcomeComponent],
   imports: [CommonModule, HttpClientModule, RouterModule.forChild(routes)],
   providers: [WorkItemService],
 })
