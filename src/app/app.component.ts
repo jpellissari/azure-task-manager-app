@@ -1,5 +1,4 @@
 import { Component } from '@angular/core'
-import { WorkItemService } from './services/work-item.service'
 
 @Component({
   selector: 'app-root',
