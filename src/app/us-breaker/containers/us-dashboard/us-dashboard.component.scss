@@ -1,0 +1,20 @@
+@import '../../../../color-scheme.scss';
+
+.work-item__search {
+  display: flex;
+  flex-direction: column;
+
+  &--title {
+    color: $primary-200;
+    font-size: 1.5em;
+    padding-bottom: 5px;
+  }
+
+  &--selector {
+    padding: 10px;
+    appearance: textfield;
+    border-radius: 5px;
+    border: none;
+    background-color: $surface-600;
+  }
+}

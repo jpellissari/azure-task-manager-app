@@ -2,10 +2,11 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 
 import { AppComponent } from './app.component'
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { UsDashboardComponent } from './us-breaker/containers/us-dashboard/us-dashboard.component'
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, UsDashboardComponent],
   imports: [BrowserModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],

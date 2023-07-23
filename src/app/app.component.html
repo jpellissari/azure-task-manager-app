@@ -12,20 +12,7 @@
 
   <div class="content">
     <div class="content__body">
-      <div class="work-item__search">
-        <span class="work-item__search--title">Work item number</span>
-        <input
-          class="work-item__search--selector"
-          type="number"
-          name="us-number"
-          value="{{ workItemNumber }}"
-          placeholder="US/BUG to be broken"
-          (keyup)="updateWorkItemNumber($event)"
-        />
-        <button class="work-item__search--button" (click)="searchWorkItem()">
-          Load
-        </button>
-      </div>
+      <app-us-dashboard></app-us-dashboard>
       <div class="content__divider"></div>
       <div class="welcome">
         <div class="welcome">
