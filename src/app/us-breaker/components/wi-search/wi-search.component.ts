@@ -14,7 +14,7 @@ import { fromEvent, map, debounceTime, Subscription } from 'rxjs'
   templateUrl: './wi-search.component.html',
   styleUrls: ['./wi-search.component.scss'],
 })
-export default class WiSearchComponent implements AfterViewInit, OnDestroy {
+export class WiSearchComponent implements AfterViewInit, OnDestroy {
   @Output('onWorkItemSearch')
   onSearch = new EventEmitter<number>()
 
