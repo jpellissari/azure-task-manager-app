@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser'
 import { RouterModule, Routes } from '@angular/router'
 
 import { AppComponent } from './app.component'
-import { UsBreakerModule } from './us-breaker/us-breaker.module'
+import { UsBreakerModule } from './us-breaker/us-breaker.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 const routes: Routes = [
   {
@@ -16,7 +17,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, RouterModule.forRoot(routes), UsBreakerModule],
+  imports: [BrowserModule, RouterModule.forRoot(routes), UsBreakerModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })
