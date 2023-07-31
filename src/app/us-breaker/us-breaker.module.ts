@@ -12,7 +12,7 @@ import { WelcomeComponent } from './containers/welcome/welcome.component'
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent, pathMatch: 'full' },
-  // { path: 'welcome', component: WelcomeComponent, pathMatch: 'full' },
+  { path: 'dashboard', component: UsDashboardComponent, pathMatch: 'full' },
 ]
 
 @NgModule({
