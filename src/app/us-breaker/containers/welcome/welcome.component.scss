@@ -1,0 +1,78 @@
+@import '../../../../color-scheme.scss';
+
+.welcome {
+  height: calc(100% - 20px);
+  margin: 10px 20px;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    width: 80%;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba($surface-600, 0.5);
+    align-self: center;
+    text-align: center;
+
+    font-size: 2.5em;
+    font-weight: 600;
+    color: $primary-100;
+  }
+
+  &__callout {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+
+    &__contribute-info {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-items: flex-start;
+      text-align: flex-start;
+    }
+  }
+
+  &__footer {
+    margin-top: auto;
+    color: rgba(white, 0.2);
+    text-align: center;
+  }
+}
+
+.stats {
+  margin-top: 100px;
+  justify-content: center;
+
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: auto;
+  grid-gap: 30px;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+
+    height: 100px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: $surface-300;
+
+    &__title {
+      padding: 5px;
+      text-align: center;
+      font-size: 1.1em;
+      font-weight: 600;
+      color: rgba(white, 0.8);
+      justify-self: flex-start;
+    }
+
+    &__value {
+      margin: auto;
+
+      font-size: 2.5em;
+      font-weight: 700;
+      color: white;
+    }
+  }
+}
